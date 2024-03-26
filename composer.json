@@ -1,7 +1,6 @@
-
 {
   "name": "level51/silverstripe-excel-export",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "time": "2021-08-09",
   "description": "GridField button for excel exports",
   "type": "silverstripe-vendormodule",
@@ -18,9 +17,9 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "php": ">=7.1",
-    "silverstripe/framework": "^4.0",
-    "phpoffice/phpspreadsheet": "^1.11"
+    "php": "^8.1",
+    "silverstripe/framework": "^5.0",
+    "phpoffice/phpspreadsheet": "^2.0"
   },
   "extra": {
     "installer-name": "silverstripe-excel-export"
