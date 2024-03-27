@@ -143,7 +143,9 @@ class GridFieldExcelExportButton implements GridField_HTMLProvider, GridField_Ac
                         }
                     }
 
-                    $value = str_replace(array("\r", "\n"), "\n", $value);
+                    // Replace "\r" and "\n" characters in the value with "\n",
+                    // or default to an empty string if $value is null
+                    $value = str_replace(["\r", "\n"], "\n", $value ?? '');
 
                     // [SS-2017-007] Sanitise XLS executable column values with a leading tab
                     if (!Config::inst()->get(get_class($this), 'xls_export_disabled')
